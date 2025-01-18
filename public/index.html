@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Game</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <div class="game-container">
+        <div class="leaderboard-container" id="leaderboard-container" style="display: none;">
+            <h3>Leaderboard</h3>
+            <ol id="leaderboard-list"></ol>
+        </div>
+        <div class="content" id="quiz-container" style="display: none;">
+            <div class="score-box" id="score-box">Score: 0</div>
+            <div class="question" id="question">Loading question...</div>
+            <div class="choices" id="choices"></div>
+            <div class="result" id="result" ></div>
+            <button class="next-button" id="next" onclick="nextQuestion()">Next Question</button>
+            <div class="restart-box" id="restart"  onclick="location.reload()">Restart</div>
+        </div>
+        <button class="start-button" id="start-button" onclick="startQuiz()">Start Quiz</button>
+        <div class="tracker-box" id="tracker-box" style="display: none;"></div>
+    </div>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
