@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Choice Game</title>
     <link rel="stylesheet" href="./styles.css">
-
+    <link rel="stylesheet" href="./animationBackground.css">
 </head>
 <body>
+    <!-- for animation -->
+    <div class="animation-container">
+        
+        <!--animation bubbles-->
+        <div class = "bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>      
+        <!-- for game -->
     <div class="game-container">
         <div class="leaderboard-container" id="leaderboard-container" style="display: none;">
             <h3>Leaderboard</h3>
@@ -21,11 +85,15 @@
             <button class="next-button" id="next" onclick="nextQuestion()">Next Question</button>
             <div class="restart-box" id="restart"  onclick="location.reload()">Restart</div>
         </div>
-        <button class="start-button" id="start-button" onclick="startQuiz()">Start Quiz</button>
+        <button class="start-button" id="start-button" onclick="startQuiz()">>Start Quiz</button>
         <div class="tracker-box" id="tracker-box" style="display: none;"></div>
     </div>
+      
+    </div>
+    
 
     
 </body>
-<script src="./script.js"></script>
+<script  src="./script.js"></script>
+
 </html>

@@ -1,3 +1,5 @@
+// import { resetScore , fetchLeaderboard, submitScore} from "./scoreboardHandler.js";
+
 const scoreBox = document.getElementById('score-box');
         const questionElement = document.getElementById('question');
         const choicesElement = document.getElementById('choices');
@@ -86,24 +88,24 @@ const scoreBox = document.getElementById('score-box');
         function nextQuestion() {
             if (questionCount >= maxQuestions-1) {
                 endGame();
+                // Reset the score on the server
+                
             } else {
                 questionCount++;
-                console.log(questionCount);
                 loadQuestion();
             }
         }
 
        function endGame() {
             
-                // Reset the score on the server
-                resetScore();
+                
 
                 // Display game over message
                 questionElement.textContent = "Game Over! Thank you for playing.";
                 choicesElement.innerHTML = '';
                 resultElement.textContent = `Your final score is ${scoreBox.textContent.split(': ')[1]}! 🎉`;
                 nextButton.style.display = 'none';
-                scoreBox.style.display = 'none';
+                // scoreBox.style.display = 'none';
 
                 // Display name submission form
                 const submitContainer = document.createElement('div');
@@ -116,7 +118,12 @@ const scoreBox = document.getElementById('score-box');
 
                 const submitButton = document.createElement('button');
                 submitButton.textContent = 'Submit Score';
-                submitButton.onclick = () => submitScore(nameInput.value);
+                submitButton.onclick = function () {
+                     submitScore(nameInput.value);
+                     trackerBox.style.display = 'none';
+                     submitContainer.style.display = 'none';
+                
+                }
 
                 submitContainer.appendChild(nameInput);
                 submitContainer.appendChild(submitButton);
@@ -126,10 +133,6 @@ const scoreBox = document.getElementById('score-box');
                 // Show leaderboard
                 fetchLeaderboard();
                 
-
-                // Reset score display
-                scoreBox.textContent = "Score: 0";
-            
         }
 
         async function submitScore(name) {

@@ -91,10 +91,11 @@ if (!name || typeof name !== "string") {
 }
   
 const leaderboard = getLeaderboard();
-  
+console.log(score);  
 leaderboard.push({ name, score });
 leaderboard.sort((a, b) => b.score - a.score); // Sort by score descending
 leaderboard.splice(10); // Keep only the top 10
+console.log(leaderboard);
   
 saveLeaderboard(leaderboard);
   

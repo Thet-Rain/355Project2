@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #0c192c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +9,13 @@ body {
 }
 
 .game-container {
-    background-color: #ffffff;
+    background-color: #D3D3D3;
     width: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    position: relative;
+    position: absolute;
 }
 
 .score-box {
