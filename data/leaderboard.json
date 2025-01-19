@@ -12,8 +12,24 @@
     "score": 6
   },
   {
+    "name": "John Doe",
+    "score": 6
+  },
+  {
+    "name": "PErson",
+    "score": 5
+  },
+  {
     "name": "dsa",
     "score": 3
+  },
+  {
+    "name": "RandoMQuizTaker",
+    "score": 3
+  },
+  {
+    "name": "Yellow",
+    "score": 2
   },
   {
     "name": "dsa",
@@ -22,21 +38,5 @@
   {
     "name": "fdsafdsa",
     "score": 1
-  },
-  {
-    "name": "fdsa",
-    "score": 1
-  },
-  {
-    "name": "Ray",
-    "score": 0
-  },
-  {
-    "name": "fda",
-    "score": 0
-  },
-  {
-    "name": "dsa",
-    "score": 0
   }
 ]
